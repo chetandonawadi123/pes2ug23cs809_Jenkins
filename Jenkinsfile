@@ -15,6 +15,7 @@ pipeline {
             steps {
                 script {
                     sh './output'  // Run the compiled binary
+                    sh 'intentional error'
                 }
             }
         }
